@@ -1,0 +1,139 @@
+h1 {
+-webkit-animation: aparece 5s ease-in;
+animation: aparece 1s ease-in-out;
+}
+
+@-webkit-keyframes aparece {
+    0% {
+opacity: 0;
+    } 100% {
+opacity: 1;
+    }
+
+}
+
+@keyframes aparece {
+        0% {
+    opacity: 0;
+        } 100% {
+    opacity: 1;
+        }
+
+}
+
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: .5rem solid #C2CCCA;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    width: 30ch;
+    box-sizing: border-box;
+    transition: transform 1s linear, box-shadow 1s ease-in-out;
+    transition-delay: 1s, 0s;    
+    position: relative;
+    animation: quica 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes quica {
+    from {
+        top: 0;
+    } 90% {
+        transform: rotate(-2deg);         
+    } 95% {
+        transform: rotate(2deg);
+            }
+    to {
+        top: 1em;
+    }
+}
+
+.citacao-bio:nth-of-type(even) {
+    float: left;
+    margin-left: 0;
+}
+
+
+.citacao-bio:nth-of-type(odd) {
+    float: right;
+    margin-right: 0;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao-bio:nth-of-type(odd):hover,
+.citacao-bio:nth-of-type(odd):focus
+ {
+    font-size: 120%;
+    transform: rotate(5deg);
+    animation-play-state: paused;
+}
+
+.citacao-bio:nth-of-type(even):hover,
+.citacao-bio:nth-of-type(even):focus
+ {
+    font-size: 120%;
+    transform: rotate(-5deg);
+    animation-play-state: paused;
+
+}
+
+.container > p::first-letter {
+    font-size: 2rem;
+    color: #3C1D3D;
+    font-weight: bold;
+    text-shadow: 1px 1px  black;
+    margin-right: .2ch;
+    line-height: 1;
+}
+
+.citacao-bio::before {
+    content: '"';
+    position: absolute;
+    font-size: 10rem;
+    color: #bbb;
+    line-height: .8;
+}
+
+.citacao-bio > p {
+    position: relative;
+}
+
+
+td{
+    background-color: #EEE; 
+}
+
+table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-collapse: separate;
+    border-spacing: .25em;
+}
+
+.topo-da-tabela{
+    background-color: #3C1D3D;
+    color: white;
+    font-weight: bold;
+}
+
+.habilidades{
+    background-color: #851944;
+    color: white;
+    font-weight: bold;
+
+}
+
+th,
+td {
+    padding: 1em;
+}
+
+.celula-maior {
+    font-style: italic;
+    vertical-align: middle;
+    text-align: center;
+}

@@ -1,0 +1,170 @@
+label[for="msg"], legend {
+    font-weight: bold;
+}
+
+fieldset {
+    margin-top: 1em;
+}
+
+.area-msg {
+    margin-top: 1em;
+}
+
+.legenda-mensagem {
+    display: block;
+
+}
+
+label[for="Nome"] {
+
+    display: block;
+}
+
+label[for="Email"] {
+
+    display: block;
+}
+
+#Nome {
+    border: .2em transparent lightgray;
+    padding: .5em;
+    font-family: inherit;
+    font-size: 1em;
+
+}
+
+.barra-nome:focus {
+    background-color: lightyellow;
+}
+
+.barra-nome:invalid {
+    box-shadow: 0 0 .4em red;
+}
+
+input[id="Email"] {
+    width: 100%;
+    border: .2em solid lightgray;
+    padding: .5em;
+    font-family: inherit;
+    font-size: 1em;
+
+}
+
+input[id="Email"]:focus {
+    background-color: lightyellow;
+}
+
+input[id="Email"]:invalid {
+    box-shadow: 0 0 .4em red;
+}
+
+
+textarea[id="msg"] {
+    width: 100%;
+    height: 10em;
+    border: .2em solid lightgray;
+    padding: .5em;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+textarea[id="msg"]:focus {
+    background-color: lightyellow;
+}
+
+textarea[id="msg"]:invalid {
+    box-shadow: 0 0 .4em red;
+}
+
+
+button {
+margin-left: auto;
+display: block;
+border: 0;
+background-color: #3C1D3D;
+color: white;
+padding:  .5em 1em;
+font-family: "Open Sans Condensed", "Arial", sans-serif;
+font-size: 1em;
+}
+
+button:hover,
+button:focus {
+    background-color: #8C1D3D;
+}
+
+.coment-outros {
+    display: none;
+}
+
+.coment-outros:focus {
+    background-color: lightyellow;
+}
+
+.coment-outros:invalid {
+    box-shadow: 0 0 .4em red;
+}
+
+.botao-outro:checked + .coment-outros {
+    display: block;
+    border: .2em solid lightgray;
+    padding: .2em;
+    font-family: inherit;
+    font-size: .8em;
+    margin-left: 1em;
+    position: absolute;
+    bottom: 246px;
+    left: 470px;
+
+}
+
+label[for="Nome"] {
+    position: relative;
+}
+
+
+label[for="Nome"]::after {
+    content:' ';
+    background-image: url(../imagens/usuario.png);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-size: 50% 50%;
+    width: 2.7em;
+    height: 2.7em;
+    background-position: center;
+    background-color: #851944;
+    background-repeat: no-repeat;
+
+}
+
+#Nome {
+    width: calc(100% - 2.7em);
+    position: relative;
+    left: 2.7em;
+}
+
+label[for="Email"] {
+    position: relative;
+}
+
+label[for="Email"]:after{
+    content: " ";
+    background-image: url(../imagens/email.png);
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-size: 50% 50%; 
+    width: 2.7em;
+    height: 2.7em;
+    background-position: center;
+    background-color: #851944;
+    background-repeat: no-repeat;
+    
+}
+
+#Email {
+    width: calc(100% - 2.7em);
+    position: relative;
+    left: 2.7em;
+}
